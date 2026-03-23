@@ -69,7 +69,7 @@ for entry, rows in entriesDictionary.items():#Go through each protein
         if driverClass!="Neither":#If the sequence is a candidate sequence, capture an image of it and make an annotation for it
             print(f"Imaging {entry}")
             pdbFile=f"https://alphafold.ebi.ac.uk/files/AF-{entry}-F1-model_v6.pdb"
-            output=f"/Users/joseparedes/Desktop/kappelLab/structuredDomainLibrary/images/{entry}_{start}_{end}.png"
+            output=f"/Users/joseparedes/Desktop/kappelLab/structuredDomainLibrary/images/{entry}_{start}_{end}.png" #Specify the folder that will hold individual images
             takePymolImage(pdbFile, start, end, output)
             imagePaths.append(output)
             annotation={
