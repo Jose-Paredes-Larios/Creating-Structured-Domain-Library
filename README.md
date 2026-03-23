@@ -62,8 +62,6 @@ To confirm that our final candidate sequences are not nonsensical, we can image 
 
 To run `6_pymolImages` specify the pathnames of the input (the output of the last step), the directory for individual images, and the final tiled image output.
 
-## Optional Steps
-
 
 
 
