@@ -53,13 +53,13 @@ def tileImages(imagePaths, output, maxCols, annotations, fontSize=50):
     tiledImage.save(output)
 
 #File Pathnames. Change them to match yours.  
-input='/Users/joseparedes/Desktop/kappelLab/structuredDomainLibrary/5_driverClassSequencesDel2.tsv'
-tileOutput='/Users/joseparedes/Desktop/kappelLab/structuredDomainLibrary/images/1_allFiltersDel2.png'
+input='/Users/joseparedes/Desktop/kappelLab/structuredDomainLibrary/5_finalCandidateSequences.tsv'
+tileOutput='/Users/joseparedes/Desktop/kappelLab/structuredDomainLibrary/images/1_allFilters.png'
 df=pd.read_csv(input, sep="\t")
 
 entriesDictionary={}
 for entry, group in df.groupby('Entry'):#Record relevant info for each domain sequence to help create annotations
-    entriesDictionary[entry]=group[['Domain', 'Domain Sequence', 'Start', 'End', 'driver_class']].values.tolist()
+    entriesDictionary[entry]=group[['Domain', 'Domain Sequence', 'Start', 'End', 'candidateSequence']].values.tolist()
  
 imagePaths=[]
 annotations=[]
