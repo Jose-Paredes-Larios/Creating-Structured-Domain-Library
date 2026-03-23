@@ -49,7 +49,7 @@ For each domain sequence, we now have a handful of metrics to describe it. We us
 - We want our structured domains to fold on their own and not have a drastic difference in behavior when isolated from its parent protein. Thus, we are interested in representative sequences with low interaction indexes
 - Protein condensation can be driven through aromatic interactions and electrostatic interactions. Thus, we want sequences with a high fraction of aromatic surface residues and a high net charge of surface residues
 - We don’t want sequences that are too compact (little surface residues) or too loose (IDR like behavior)
-- I do not have any gold standards to set thresholds. Thus, thresholds were set relative to the dataset:
+- We do not have any gold standards to set thresholds yet. Thus, thresholds are set relative to the dataset:
   - Bottom 30% for interaction threshold
   - Top 25% for aromatic threshold
   - Top 25% for charge threshold
